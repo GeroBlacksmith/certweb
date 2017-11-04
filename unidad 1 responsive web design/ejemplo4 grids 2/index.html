@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grids 2</title>
+</head>
+
+<body>
+    <style>
+        .wrapper {
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr;/*fr fracciones*/
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px auto);
+        }
+
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+            border-bottom: 3px #0F4 solid;
+
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+            border-bottom: 3px #04F solid;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+
+        .nested>div {
+            background: white-space;
+            border-right: 3px cyan solid;
+            padding: 1em;
+        }
+    </style>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab vero suscipit, itaque odit similique excepturi dolor consequatur
+            est harum omnis, magni eaque fuga, repellendus amet numquam inventore labore esse expedita dolore. Est provident
+            vero illum quod quisquam soluta placeat, asperiores dolore vel blanditiis iure culpa veniam ipsum illo id, eaque
+            repudiandae, omnis cupiditate delectus ratione assumenda nobis. Pariatur, accusantium. Nostrum incidunt minus
+            sequi error, reprehenderit eaque aperiam amet pariatur numquam, possimus, nihil assumenda deleniti veritatis
+            reiciendis id architecto vero. Magnam?
+        </div>
+        <div class="nested">
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+            <div>
+                Lorem
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+
+</html>

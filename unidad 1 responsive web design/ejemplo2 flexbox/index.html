@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unidad 1 ejemplo 2 Flexbox</title>
+
+</head>
+
+<body>
+    <style>
+        @media(min-width:768px) {
+            /*eliminar la linea display flex para ver la diferencia*/
+            .container-1 {
+                display: flex;
+                /*align-items: flex-start; align-items: flex-end;*/
+                align-items: stretch;
+                /* default es stretch*/
+                flex-direction: column;
+                /*row row-reverse column-reverse*/
+            }
+            .container-2 {
+                display: flex;
+                /*justify-content:flex-start*/
+                /*justify-content:flex-end;*/
+                /*justify-content:center;*/
+                justify-content: space-between;
+            }
+        }
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+        }
+
+        .container-1 div,
+        .container-2 div,
+        .container-3 div {
+            border-top: 1px #aaa solid;
+            border-bottom: 1px #444 solid;
+            border-left: 1px #aaa solid;
+            border-right: 1px #ddd solid;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            padding: 10px;
+        }
+
+        .box-container-2 {
+            /*            width: 25%;*/
+            flex-basis: 27%;
+        }
+        .box-container-3{
+            flex-basis: 27%;
+        }
+
+        .box-1 {
+            flex: 1;
+            order: 3;
+        }
+
+        .box-2 {
+            flex: 2;
+            order: 2;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 1;
+        }
+    </style>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box uno</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+        </div>
+        <div class="box-2">
+            <h3>Box dos</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box tres</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="container-2">
+            <div class="container-1">
+                    <div class="box-1">
+                        <h3>Box uno</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+            
+                    </div>
+                    <div class="box-2">
+                        <h3>Box dos</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="box-3">
+                        <h3>Box tres</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    </div>
+            
+                </div>
+        <div class="box-container-2">
+            <h3>Box cuatro</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et officia modi laudantium necessitatibus
+                quis earum impedit nisi ut placeat!</p>
+
+        </div>
+        <div class="box-container-2">
+            <h3>Box cinco</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cum hic totam accusantium ipsa rerum impedit,
+                eum illum.</p>
+        </div>
+        <div class="box-container-2">
+            <h3>Box seis</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum aut obcaecati eius dolorem a dolor, iure, nesciunt
+                consequatur saepe libero doloremque cupiditate.</p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="container-3">
+        <div class="box-container-3">
+            <h3>Box siete</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et officia modi laudantium necessitatibus
+                quis earum impedit nisi ut placeat!</p>
+
+        </div>
+        <div class="box-container-3">
+            <h3>Box ocho</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cum hic totam accusantium ipsa rerum impedit,
+                eum illum.</p>
+        </div>
+        <div class="box-container-3">
+            <h3>Box nueve</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum aut obcaecati eius dolorem a dolor, iure, nesciunt
+                consequatur saepe libero doloremque cupiditate.</p>
+        </div>
+        <div class="box-container-3">
+                <h3>Box diez</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et officia modi laudantium necessitatibus
+                    quis earum impedit nisi ut placeat!</p>
+    
+            </div>
+            <div class="box-container-3">
+                <h3>Box once</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cum hic totam accusantium ipsa rerum impedit,
+                    eum illum.</p>
+            </div>
+            <div class="box-container-3">
+                <h3>Box doce</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum aut obcaecati eius dolorem a dolor, iure, nesciunt
+                    consequatur saepe libero doloremque cupiditate.</p>
+            </div>
+    </div>
+</body>
+
+</html>
