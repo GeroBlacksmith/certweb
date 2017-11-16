@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        body,
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+            /* top right botton left */
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight,
+        header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+
+        }
+
+        /*VIDEO*/
+
+        .video-content, .audio-content {
+            margin: 20px;
+        }
+        .audio-content{
+            width: 480px;
+            height: 240px;
+            background: #008088;
+            color: white;
+        }
+
+        /*CODE*/
+
+        code {
+            background: black;
+            color: white;
+        }
+    </style>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <span class="higlight"> EJEMPLO 6 MULTIMEDIA </span> Training</h1>
+            </div>
+
+            
+        </div>
+    </header>
+    <div class="video-content">
+        <h1>Reproductor de video básico</h1>
+        <video src="sv.mp4" controls>
+            <p>Tu navegador no soporta la reproduccion de videos
+                <a href="sv.mp4">click aqui</a> para descargarlo. </p>
+        </video>
+        <br>
+        <h2>Código</h2>
+        <code>
+            &lt;video src="sv.mp4" controls&gt;
+            &lt;p&gt;Tu navegador no soporta la reproduccion de videos &lt;a href="sv.mp4"&gt;click aqui&lt;/a&gt; para descargarlo. &lt;/p&gt;
+            &lt;/video&gt;
+    </code>
+        <br>
+
+    </div>
+    <div class="audio-content">
+        <h1>Reproductor de audio</h1>
+        <audio src="gbs.mp3" controls></audio>
+        <h2>Código</h2>
+        <code>
+            &lt;audio src="gbs.mp3" controls&gt;&lt;/audio&gt;
+            
+    </code>
+        <br>
+    </div>
+    <div class="video-content">
+        <video controls>
+            <source src="sv.mp4" type="video/mp4">
+            <source src="sv.webm" type="video/webm">
+            <p>Tu navegador no soporta la reproduccion de videos
+                <a href="sv.mp4">click aqui</a> para descargarlo. </p>
+        </video>
+        <h2>Código</h2>
+        <code>
+           
+            &lt;video  controls&gt;
+                    &lt;source src="sv.mp4" type="video/mp4"&gt;
+                    &lt;source src="sv.webm" type="video/webm"&gt;    
+                    &lt;p&gt;Tu navegador no soporta la reproduccion de videos &lt;a href="sv.mp4"&gt;click aqui&lt;/a&gt; para descargarlo. &lt;/p&gt;
+                &lt;/video&gt;
+    </code>
+    </div>
+    <div class="video-content">
+        <video controls width="400" height="400" loop muted poster="si.jpg">
+            <source src="sv.mp4" type="video/mp4">
+            <source src="sv.webm" type="video/webm">
+            <p>Your browser doesn't support HTML5 video. Here is a
+                <a href="sv.mp4">link to the video</a> instead.</p>
+        </video>
+        <h2>Código</h2>
+        <code>
+            &lt;video controls width="400" height="400" loop muted poster="si.jpg"&gt;
+                    &lt;source src="sv.mp4" type="video/mp4"&gt;
+                    &lt;source src="sv.webm" type="video/webm"&gt;
+                    &lt;p&gt;Your browser doesn't support HTML5 video. Here is a
+                        &lt;a href="sv.mp4"&gt;link to the video&lt;/a&gt; instead.&lt;/p&gt;
+                &lt;/video&gt;
+    </code>
+
+    </div>
+
+</body>
+
+</html>
